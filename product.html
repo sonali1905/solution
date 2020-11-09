@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing PAge</title>
+    
+</head>
+ 
+ /*******************************************************STYLING*******************************************/
+
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap');
+    body{
+        margin:0;
+        padding:0;
+        font-family: 'Crimson Text', serif;
+    }
+
+    a{
+        transition:all .5s;
+        text-decoration:none;
+        color:#fff;
+        font-color:pink;
+    }
+
+    img{
+        width:100%;
+        transition: all .5s;
+    }
+
+    section{
+        padding:0px;
+        margin-top:50px;
+       /* background:rgb(34, 167, 240,0.09);*/
+       background:yellow;
+        text-align:center;
+    }
+
+    .container{
+        max-width:1200px;
+        width:100%;
+        margin: 0 auto;
+    }
+
+    main{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap:-20px;
+        margin: 30px 15px 0px 15px;
+    }
+
+    .Products{
+        position:relative;
+        overflow:hidden;
+        font-color:pink;
+        max-height:500px;
+        height:100%;
+        box-sizing:border-box;
+        box-shadow:0 2px 10px #ccc;
+        transition:all .5s;
+    }
+    .Products:hover img{
+        transform: scale(1:1);
+        transition:all .4s;
+            }
+    
+    .intro{
+        position:relative;
+        overflow:hidden;
+        font-color:7f8c8d;
+        max-height:500px;
+        height:100%;
+        box-sizing:border-box;
+        box-shadow:0 2px 10px #ccc;
+        transition:all .5s;
+    }
+
+    .intro h2{
+        margin-top:50px;
+    }
+    .btn{
+        margin-top: 50px;
+        display:inline-block;
+        padding: 10px,40px;
+        border:2px solid blue;
+        font-weight:400;
+        background:blue;
+    }
+
+    .btn:hover{
+        background:rgba(52,152,219,1.0);
+        transition: all .5s;
+        text-decoration:none;
+
+    }
+
+
+ /*******************************************RESPONSIVE**********************************************************/
+
+    @media(max-width:992px){
+        main{
+            grid-template-columns: repeat(4,1fr);
+            grid-gap:0px;
+        }
+        img{
+            width:100%;
+        }
+    }
+
+    @media(max-width:767px){
+        main{
+            grid-template-columns: repeat(2,1fr);
+            grid-gap:0px;
+        }
+        header{
+            width:95%;
+        }
+        img{
+            width:100%;
+        }
+    }
+    
+
+    @media(max-width:500px){    main{
+            grid-template-columns: repeat(1,1fr);
+            grid-gap:0px;
+            
+        }
+        img{
+            width:100%;
+        }
+    }
+</style>
+
+/*******************************************************************************************Main HTML file***********************************/
+
+
+<body>
+    <header>
+    </header>
+    <section>
+    <main>
+        <div class="Products">
+            <img src="C:\Users\HP\Desktop\2020 solution challenge\sofa.jpg" alt="">
+        </div>
+        <div class="intro">
+            <h2>Vinod Furniture Solid Sheesham Teak Wood Wooden Sofa Set 5 Seater Home Furniture Living Room</h2>
+            <h2><p>₹26,999 </p></h2><p>₹69,999 Save ₹43,000 (61%) Get 10% off with SBI Credit Cards</p>
+            <p><a href='#' class="btn">View details</a></p>
+        </div>
+
+        <div class="Products">
+            <img src="C:\Users\HP\Desktop\2020 solution challenge\laptop.jpg" alt="">
+        </div>
+
+        <div class="intro">
+            <h2>Microsoft Surface GO 2 STQ-00013 10.1-inch Laptop (Gold Processor 4425Y/8GB/128GB SSD/Window)</h2>
+            <h2><p>₹55,990</p></h2><p>Price:₹57,999 You Save ₹2,009 (3%) Get ₹2100 cashbackGet ₹2100 cashback</p>
+
+            <p><a href='#' class="btn">View details</a><p>
+        </div>
+
+        <div class="Products">
+            <img src="C:\Users\HP\Desktop\2020 solution challenge\tomatoes.jpg" alt="">
+        </div>
+
+        <div class="intro">
+            <h2>Fresh Tomato Hybrid, 1kg </h2>
+            <h2><p>₹ 90.00 </p></h2><p>Price: ₹ 48.00 (₹ 4.80 / 100 g)You Save: ₹ 42.00 (47%)Inclusive of all taxes</p>
+
+            <p><a href='#' class="btn">View details</a><p>
+        </div>
+
+        <div class="Products">
+            <img src="C:\Users\HP\Desktop\2020 solution challenge\milky.jpg" height:160px>
+        </div>
+
+        <div class="intro">
+            <h2>Amul Taaza Homogenised Toned Milk, 1/2L Pack </h2>
+            <h2><p> ₹ 32.00 (₹ 64.00 / l)</p></h2><p>10% off with SBI Credit Cards.Inclusive of all taxes</p>
+
+            <p><a href='#' class="btn">View details</a></p>
+        </div>
+
+        <div class="Products">
+            <img src="C:\Users\HP\Desktop\2020 solution challenge\rice.jpg" alt="">
+        </div>
+
+        <div class="intro">
+            <h2>India Gate Basmati Rice Bag, Mogra, 10kg </h2>
+            <h2><p>₹ 616.00 (₹ 61.60 / kg)</p></h2><p> Save:₹ 54.00 (8%)10% off with SBI Credit Cards.Inclusive of all taxes</p>
+
+            <p><a href='#' class="btn">View details</a></p>
+        </div>
+
+        <div class="Products">
+            <img src="C:\Users\HP\Desktop\2020 solution challenge\hood.jpg" alt="">
+        </div>
+
+        <div class="intro">
+            <h2>More & More Men's & Women's Cotton Hooded Hoodie </h2>
+            <h2><p>₹ 429.00 - ₹ 645.00</p></h2><p> Inclusive of all taxes<p>
+
+            <p><a href='#' class="btn">View details</a></p>
+        </div>
+    </main>
+</section>
+</body>
+</html>
